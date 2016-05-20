@@ -3,7 +3,6 @@ package core;
 import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.io.Console;
 import java.net.InetAddress;
 import org.glassfish.grizzly.http.server.HttpServer;
 
@@ -35,8 +34,11 @@ public class Haven {
 				System.out.println("Running...");
 			}
 		}, 10000, 10000);
-		System.out.println("Please, enter any number to exit.");
+		System.out.println("Please, enter 0 to exit.");
 		int i = scanner.nextInt();
+		if(i == 0){
+			timer.cancel();
+		}
 	}
 	
     static void startServer() throws Exception{
@@ -45,7 +47,7 @@ public class Haven {
      	localIP = InetAddress.getLocalHost().getHostAddress();
         String url = "http://" + localIP + ":" + HTTP_PORT;
 
-        server = GrizzlyServerFactory.createHttpServer(url);
+        server = GrizzlyServerFactory.createHttpServer("http://0.0.0.0:8080");
 
         System.out.println( "URL: " + url );
     	
