@@ -14,5 +14,8 @@
 	<classpathentry kind="lib" path="lib/jersey-json-1.19.jar"/>
 	<classpathentry kind="lib" path="lib/jersey-server-1.19.jar"/>
 	<classpathentry kind="lib" path="lib/jersey-servlet-1.19.jar"/>
+	<classpathentry kind="lib" path="lib/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/json-jena-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/jsr311-api-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
