@@ -5,14 +5,13 @@ import java.net.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 
 import core.Haven;
 
 public class Resourcerer {
 
-	static final Logger LOGGER = LogManager.getLogger(Resourcerer.class.getName());
+	static final Logger LOGGER = Logger.getLogger(Resourcerer.class.getName());
 	private List<AbstractResource> resources;
 
 	public Resourcerer(AbstractResource... resourcesToWatch) 

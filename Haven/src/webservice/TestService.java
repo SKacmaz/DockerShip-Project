@@ -7,8 +7,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.json.*;
 
 import core.Haven;
@@ -16,7 +15,7 @@ import core.Haven;
 @Path("/test")
 public class TestService {
 	
-	static final Logger LOGGER = LogManager.getLogger(TestService.class.getName());
+	static final Logger LOGGER = Logger.getLogger(TestService.class.getName());
     
 	@GET
     @Path("/testDefaultAnswer")

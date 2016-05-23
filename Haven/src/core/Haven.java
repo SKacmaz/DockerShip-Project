@@ -6,7 +6,7 @@ import java.util.TimerTask;
 import java.io.IOException;
 import java.net.InetAddress;
 
-import org.apache.logging.log4j.*;
+import org.apache.log4j.Logger;
 import org.glassfish.grizzly.http.server.HttpServer;
 
 import com.sun.jersey.api.container.grizzly2.GrizzlyServerFactory;
@@ -16,7 +16,8 @@ import resourcerer.Resourcerer;
 
 public class Haven {
 
-	static final Logger LOGGER = LogManager.getLogger(Haven.class.getName());
+//	static final Logger LOGGER = LogManager.getLogger(Haven.class.getName());
+	static final Logger LOGGER = Logger.getLogger(Haven.class.getName());
 
 	private final static int HTTP_PORT = 8080;
 	private final static int PING_PORT = 9999; // port to ping the clients at
