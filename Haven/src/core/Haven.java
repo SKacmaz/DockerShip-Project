@@ -16,8 +16,7 @@ import resourcerer.Resourcerer;
 
 public class Haven {
 
-	/* Get actual class name to be printed on */
-	static final Logger logger = LogManager.getLogger(Haven.class.getName());
+	static final Logger LOGGER = LogManager.getLogger(Haven.class.getName());
 
 	private final static int HTTP_PORT = 8080;
 	private final static int PING_PORT = 9999; // port to ping the clients at
@@ -26,34 +25,36 @@ public class Haven {
 	static Timer timer;
 
 	public static void main(String[] args) throws IOException {
-		logger.info("Starting Haven");
+		LOGGER.info("");
+		LOGGER.info("###############################");
+		LOGGER.info("   Starting Haven");
+		LOGGER.info("###############################");
 
 		// start Resourcer
-		logger.info("Starting Resourcerer");
+		LOGGER.info("Starting Resourcerer");
 		
 		Resourcerer schmendrik = new Resourcerer();
 		String result = schmendrik.getJsonFrom(schmendrik.getAttachedResource(""));
-		logger.debug(result);
+		LOGGER.debug("Result form running Schmendrik: " + result);
 
 		// Start Scanner
-		logger.info("Starting Scanner");
+		LOGGER.info("Starting Scanner");
 		Scanner scanner = new Scanner(System.in);
 
 		try {
 			startServer();
 		} catch (Exception e) {
-			e.printStackTrace();
-			logger.error("Starting ApiServer failed with " + e);
+			LOGGER.error("Starting ApiServer failed with " + e);
 		}
 
 		timer = new Timer();
 		timer.schedule(new TimerTask() {
 			@Override
 			public void run() {
-				System.out.println("Running...");
+				LOGGER.debug("Running...");
 			}
 		}, 10000, 10000);
-		System.out.println("Please, enter 0 to exit.");
+		LOGGER.debug("Please, enter 0 to exit.");
 		int i = scanner.nextInt();
 		if (i == 0) {
 			timer.cancel();
@@ -68,6 +69,6 @@ public class Haven {
 
 		server = GrizzlyServerFactory.createHttpServer("http://0.0.0.0:8080");
 
-		logger.info("Current URL is : " + url);
+		LOGGER.info("Current URL is : " + url);
 	}
 }

@@ -1,0 +1,66 @@
+2016-29-23 12:29:17.312 [main] INFO  core.Haven - Starting Haven
+2016-29-23 12:29:17.313 [main] INFO  core.Haven - Starting Resourcerer
+2016-29-23 12:29:17.384 [main] INFO  core.Haven - Starting Scanner
+2016-29-23 12:29:19.392 [main] INFO  core.Haven - Current URL is : http://192.168.178.53:8080
+2016-44-23 12:44:26.466 [main] INFO  core.Haven - Starting Haven
+2016-44-23 12:44:26.467 [main] INFO  core.Haven - Starting Resourcerer
+2016-44-23 12:44:26.470 [main] INFO  resourcerer.DockerResource - Initializing Docker Resource with URL: http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-44-23 12:44:26.550 [main] INFO  core.Haven - Result form running Schmendrik: [{"Id":"sha256:8596123a638e23837cc54dbaffccceedc4ce5452eee7f957e8aba93d79b9c6e8","ParentId":"","RepoTags":["centos:latest"],"RepoDigests":null,"Created":1463504363,"Size":196742561,"VirtualSize":196742561,"Labels":{"build-date":"2016-05-16","license":"GPLv2","name":"CentOS Base Image","vendor":"CentOS"}},{"Id":"sha256:aec2d1acf489e2d4bb42232234068d51e58695aa5cfa0fecd3438c2a8266d300","ParentId":"","RepoTags":["swarm:latest"],"RepoDigests":null,"Created":1462818563,"Size":19320892,"VirtualSize":19320892,"Labels":{}},{"Id":"sha256:c5f1cf30c96b5b55c0e6385f2ecb791790eacfdc874500ec3dd865789e358dd1","ParentId":"","RepoTags":["ubuntu:latest"],"RepoDigests":null,"Created":1462317178,"Size":120733278,"VirtualSize":120733278,"Labels":{}},{"Id":"sha256:94df4f0ce8a4d4d4c030b9bdfe91fc9cf6a4b7be914542315ef93a046d520614","ParentId":"","RepoTags":["hello-world:latest"],"RepoDigests":null,"Created":1461714760,"Size":967,"VirtualSize":967,"Labels":{}},{"Id":"sha256:09ea64205e553163a9d7790c9688cff73e3dc2439a8382021a2b2223545f01ff","ParentId":"","RepoTags":["progrium/consul:latest"],"RepoDigests":null,"Created":1435694381,"Size":69401245,"VirtualSize":69401245,"Labels":{}}]
+2016-44-23 12:44:26.555 [main] INFO  core.Haven - Starting Scanner
+2016-44-23 12:44:28.426 [main] INFO  core.Haven - Current URL is : http://192.168.178.53:8080
+2016-45-23 12:45:54.651 [main] INFO  core.Haven - Starting Haven
+2016-45-23 12:45:54.653 [main] INFO  core.Haven - Starting Resourcerer
+2016-45-23 12:45:54.657 [main] INFO  resourcerer.DockerResource - Initializing Docker Resource with URL: http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-45-23 12:45:54.951 [main] INFO  core.Haven - Starting Scanner
+2016-45-23 12:45:57.071 [main] INFO  core.Haven - Current URL is : http://192.168.178.53:8080
+2016-46-23 12:46:17.803 [main] INFO  core.Haven - Starting Haven
+2016-46-23 12:46:17.804 [main] INFO  core.Haven - Starting Resourcerer
+2016-46-23 12:46:17.807 [main] INFO  resourcerer.DockerResource - Initializing Docker Resource with URL: http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-46-23 12:46:17.868 [main] INFO  core.Haven - Starting Scanner
+2016-46-23 12:46:19.850 [main] INFO  core.Haven - Current URL is : http://192.168.178.53:8080
+2016-46-23 12:46:54.610 [main] INFO  core.Haven - Starting Haven
+2016-46-23 12:46:54.611 [main] INFO  core.Haven - Starting Resourcerer
+2016-46-23 12:46:54.614 [main] INFO  resourcerer.DockerResource - Initializing Docker Resource with URL: http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-46-23 12:46:54.667 [main] INFO  core.Haven - Starting Scanner
+2016-46-23 12:46:56.605 [main] INFO  core.Haven - Current URL is : http://192.168.178.53:8080
+2016-50-23 12:50:09.648 [main] INFO  core.Haven - Starting Haven
+2016-50-23 12:50:09.650 [main] INFO  core.Haven - Starting Resourcerer
+2016-50-23 12:50:09.651 [main] DEBUG resourcerer.Resourcerer - adding Docker Resource
+2016-50-23 12:50:09.652 [main] INFO  resourcerer.DockerResource - Initializing Docker Resource with URL: http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-50-23 12:50:09.704 [main] INFO  core.Haven - Starting Scanner
+2016-50-23 12:50:11.621 [main] INFO  core.Haven - Current URL is : http://192.168.178.53:8080
+2016-51-23 12:51:56.853 [main] INFO  core.Haven - Starting Haven
+2016-51-23 12:51:56.854 [main] INFO  core.Haven - Starting Resourcerer
+2016-51-23 12:51:56.856 [main] DEBUG resourcerer.Resourcerer - adding Docker Resource
+2016-51-23 12:51:56.857 [main] INFO  resourcerer.DockerResource - Initializing Docker Resource with URL: http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-51-23 12:51:56.920 [main] INFO  core.Haven - Starting Scanner
+2016-51-23 12:51:58.796 [main] INFO  core.Haven - Current URL is : http://192.168.178.53:8080
+2016-53-23 12:53:32.955 [main] INFO  core.Haven - Starting Haven
+2016-53-23 12:53:32.956 [main] INFO  core.Haven - Starting Resourcerer
+2016-53-23 12:53:32.959 [main] INFO  resourcerer.DockerResource - Initializing Docker Resource with URL: http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-53-23 12:53:33.280 [main] INFO  core.Haven - Starting Scanner
+2016-53-23 12:53:35.331 [main] INFO  core.Haven - Current URL is : http://192.168.178.53:8080
+2016-58-23 12:58:04.527 [main] INFO  core.Haven - 
+2016-58-23 12:58:04.528 [main] INFO  core.Haven - ###############################
+2016-58-23 12:58:04.528 [main] INFO  core.Haven - Starting Haven
+2016-58-23 12:58:04.528 [main] INFO  core.Haven - ###############################
+2016-58-23 12:58:04.528 [main] INFO  core.Haven - Starting Resourcerer
+2016-58-23 12:58:04.531 [main] INFO  resourcerer.DockerResource - Initializing Docker Resource with URL: http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-58-23 12:58:04.848 [main] INFO  core.Haven - Starting Scanner
+2016-58-23 12:58:06.764 [main] INFO  core.Haven - Current URL is : http://192.168.178.53:8080
+2016-58-23 12:58:33.363 [main] INFO  core.Haven - 
+2016-58-23 12:58:33.364 [main] INFO  core.Haven - ###############################
+2016-58-23 12:58:33.364 [main] INFO  core.Haven -    Starting Haven
+2016-58-23 12:58:33.364 [main] INFO  core.Haven - ###############################
+2016-58-23 12:58:33.365 [main] INFO  core.Haven - Starting Resourcerer
+2016-58-23 12:58:33.367 [main] INFO  resourcerer.DockerResource - Initializing Docker Resource with URL: http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-58-23 12:58:33.680 [main] INFO  core.Haven - Starting Scanner
+2016-58-23 12:58:35.659 [main] ERROR core.Haven - Starting ApiServer failed with java.net.BindException: Address already in use: bind
+2016-59-23 12:59:29.044 [main] INFO  core.Haven - 
+2016-59-23 12:59:29.045 [main] INFO  core.Haven - ###############################
+2016-59-23 12:59:29.045 [main] INFO  core.Haven -    Starting Haven
+2016-59-23 12:59:29.046 [main] INFO  core.Haven - ###############################
+2016-59-23 12:59:29.046 [main] INFO  core.Haven - Starting Resourcerer
+2016-59-23 12:59:29.048 [main] INFO  resourcerer.DockerResource - Initializing Docker Resource with URL: http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-59-23 12:59:29.134 [main] INFO  core.Haven - Starting Scanner
+2016-59-23 12:59:31.072 [main] INFO  core.Haven - Current URL is : http://192.168.178.53:8080
