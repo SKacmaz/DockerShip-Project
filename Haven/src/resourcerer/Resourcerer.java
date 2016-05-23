@@ -7,14 +7,33 @@ import java.util.List;
 
 public class Resourcerer {
 
-	private List<URL> resources;
+	private List<AbstractResource> resources;
 
-	public Resourcerer(URL... resourceUrls) {
-		resources = new ArrayList<URL>();
-		for (URL url: resourceUrls)
+	public Resourcerer(AbstractResource... resourcesToWatch) 
+	{
+		
+		resources = new ArrayList<AbstractResource>();
+		for (AbstractResource resource: resourcesToWatch)
 		{
-			resources.add(url);
+			resources.add(resource);
 		}
+		
+		try {
+			resources.add(new DockerResource());
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public String getJsonFrom(AbstractResource resource)
+	{
+		String result = "";
+		try {
+			result = getJsonFrom(resource.getResourceUrl().toString());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return result;
 	}
 
 	public String getJsonFrom(String urlToRead) throws IOException {
@@ -29,5 +48,10 @@ public class Resourcerer {
 		}
 		rd.close();
 		return result.toString();
+	}
+	
+	public AbstractResource getAttachedResource(String name)
+	{
+		return resources.get(0);
 	}
 }
