@@ -17,4 +17,5 @@
       <appender-ref ref="MyFile" level="info"/>
     </root>
   </Loggers>
+  <transformer implementation="com.github.edwgiz.mavenShadePlugin.log4j2CacheTransformer.PluginsCacheFileTransformer" />
 </Configuration>
