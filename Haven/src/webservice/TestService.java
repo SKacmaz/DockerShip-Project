@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.json.*;
 
 import core.Haven;
+import model.Resource;
 
 @Path("/test")
 public class TestService {
@@ -46,6 +47,25 @@ public class TestService {
 		try {
 			json.put("param", param);
 
+	        return Response.ok(
+			        json.toString(),
+			        MediaType.APPLICATION_JSON_TYPE
+			).build();
+		} catch (JSONException e1) {
+			LOGGER.error("Json Request failed with: " + e1);
+            return Response.serverError().build();
+		}
+    }
+	
+	@GET
+    @Path("/testListAnswer")
+    @Produces("application/json")
+    public Response listTest(@QueryParam("param") String param) {
+		JSONObject json = new JSONObject();
+		Resource r = new Resource();
+		try {
+			json.put("key", "needs investigation");
+			// TODO Test how to send a list of Objects via JSON
 	        return Response.ok(
 			        json.toString(),
 			        MediaType.APPLICATION_JSON_TYPE
