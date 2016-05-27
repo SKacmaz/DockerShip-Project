@@ -19,7 +19,7 @@ public class Haven {
 //	static final Logger LOGGER = LogManager.getLogger(Haven.class.getName());
 	static final Logger LOGGER = Logger.getLogger(Haven.class.getName());
 
-	private final static int HTTP_PORT = 8080;
+	private final static int HTTP_PORT = 8081;
 	private final static int PING_PORT = 9999; // port to ping the clients at
 	static String localIP; // server ip
 	static HttpServer server;
@@ -68,7 +68,7 @@ public class Haven {
 		localIP = InetAddress.getLocalHost().getHostAddress();
 		String url = "http://" + localIP + ":" + HTTP_PORT;
 
-		server = GrizzlyServerFactory.createHttpServer("http://0.0.0.0:8080");
+		server = GrizzlyServerFactory.createHttpServer("http://0.0.0.0:8081");
 
 		LOGGER.info("Current URL is : " + url);
 	}

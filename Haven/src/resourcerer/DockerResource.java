@@ -11,7 +11,7 @@ public class DockerResource extends AbstractResource
 	
 	public DockerResource() throws MalformedURLException
 	{
-		super("DockerSwarm", new URL ("http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json"));
+		super("DockerSwarm", new URL ("http://ec2-52-28-184-227.eu-central-1.compute.amazonaws.com:2375/images/json"));
 		LOGGER.info("Initializing Docker Resource with URL: " + this.getResourceUrl().toString());
 	}
 

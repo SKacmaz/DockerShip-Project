@@ -6,3 +6,45 @@
 2016-05-23 13:59:19 INFO  DockerResource:15 - Initializing Docker Resource with URL: http://ec2-52-29-189-238.eu-central-1.compute.amazonaws.com:2375/images/json
 2016-05-23 13:59:19 INFO  Haven:42 - Starting Scanner
 2016-05-23 13:59:21 ERROR Haven:48 - Starting ApiServer failed with java.net.BindException: Address already in use: bind
+2016-05-27 14:02:57 INFO  Haven:29 - 
+2016-05-27 14:02:57 INFO  Haven:30 - ###############################
+2016-05-27 14:02:57 INFO  Haven:31 -    Starting Haven
+2016-05-27 14:02:57 INFO  Haven:32 - ###############################
+2016-05-27 14:02:57 INFO  Haven:35 - Starting Resourcerer
+2016-05-27 14:02:57 INFO  DockerResource:15 - Initializing Docker Resource with URL: http://ec2-52-28-184-227.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-05-27 14:02:57 INFO  Haven:42 - Starting Scanner
+2016-05-27 14:02:59 ERROR Haven:48 - Starting ApiServer failed with java.net.BindException: Address already in use: bind
+2016-05-27 14:04:58 INFO  Haven:29 - 
+2016-05-27 14:04:58 INFO  Haven:30 - ###############################
+2016-05-27 14:04:58 INFO  Haven:31 -    Starting Haven
+2016-05-27 14:04:58 INFO  Haven:32 - ###############################
+2016-05-27 14:04:58 INFO  Haven:35 - Starting Resourcerer
+2016-05-27 14:04:58 INFO  DockerResource:15 - Initializing Docker Resource with URL: http://ec2-52-28-184-227.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-05-27 14:04:58 INFO  Haven:42 - Starting Scanner
+2016-05-27 14:05:00 ERROR Haven:48 - Starting ApiServer failed with java.net.BindException: Address already in use: bind
+2016-05-27 14:06:03 INFO  Haven:29 - 
+2016-05-27 14:06:03 INFO  Haven:30 - ###############################
+2016-05-27 14:06:03 INFO  Haven:31 -    Starting Haven
+2016-05-27 14:06:03 INFO  Haven:32 - ###############################
+2016-05-27 14:06:03 INFO  Haven:35 - Starting Resourcerer
+2016-05-27 14:06:03 INFO  DockerResource:15 - Initializing Docker Resource with URL: http://ec2-52-28-184-227.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-05-27 14:06:03 INFO  Haven:42 - Starting Scanner
+2016-05-27 14:06:05 INFO  Haven:73 - Current URL is : http://172.21.38.200:8081
+2016-05-27 14:07:07 INFO  Haven:29 - 
+2016-05-27 14:07:07 INFO  Haven:30 - ###############################
+2016-05-27 14:07:07 INFO  Haven:31 -    Starting Haven
+2016-05-27 14:07:07 INFO  Haven:32 - ###############################
+2016-05-27 14:07:07 INFO  Haven:35 - Starting Resourcerer
+2016-05-27 14:07:07 DEBUG Resourcerer:28 - adding Docker Resource
+2016-05-27 14:07:07 INFO  DockerResource:15 - Initializing Docker Resource with URL: http://ec2-52-28-184-227.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-05-27 14:07:07 DEBUG Resourcerer:42 - getting Json from: DockerSwarm
+2016-05-27 14:07:07 DEBUG Resourcerer:59 - getting Json from Url: http://ec2-52-28-184-227.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-05-27 14:07:07 DEBUG Haven:39 - Result form running Schmendrik: [{"Id":"sha256:aec2d1acf489e2d4bb42232234068d51e58695aa5cfa0fecd3438c2a8266d300","ParentId":"","RepoTags":["swarm:latest"],"RepoDigests":null,"Created":1462818563,"Size":19320892,"VirtualSize":19320892,"Labels":{}},{"Id":"sha256:94df4f0ce8a4d4d4c030b9bdfe91fc9cf6a4b7be914542315ef93a046d520614","ParentId":"","RepoTags":["hello-world:latest"],"RepoDigests":null,"Created":1461714760,"Size":967,"VirtualSize":967,"Labels":{}},{"Id":"sha256:09ea64205e553163a9d7790c9688cff73e3dc2439a8382021a2b2223545f01ff","ParentId":"","RepoTags":["progrium/consul:latest"],"RepoDigests":null,"Created":1435694381,"Size":69425549,"VirtualSize":69425549,"Labels":{}}]
+2016-05-27 14:07:07 INFO  Haven:42 - Starting Scanner
+2016-05-27 14:07:09 INFO  Haven:73 - Current URL is : http://172.21.38.200:8081
+2016-05-27 14:07:09 DEBUG Haven:58 - Please, enter 0 to exit.
+2016-05-27 14:07:19 DEBUG Haven:55 - Running...
+2016-05-27 14:07:29 DEBUG Haven:55 - Running...
+2016-05-27 14:07:39 DEBUG Haven:55 - Running...
+2016-05-27 14:07:49 DEBUG Haven:55 - Running...
+2016-05-27 14:07:59 DEBUG Haven:55 - Running...
