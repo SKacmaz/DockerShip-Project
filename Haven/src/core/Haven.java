@@ -11,7 +11,7 @@ import org.glassfish.grizzly.http.server.HttpServer;
 
 import com.sun.jersey.api.container.grizzly2.GrizzlyServerFactory;
 
-import resourcerer.DockerResource;
+import resourcerer.DockerResourceEndpoint;
 import resourcerer.Resourcerer;
 
 public class Haven {

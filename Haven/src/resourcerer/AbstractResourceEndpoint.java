@@ -7,13 +7,13 @@ import java.net.URL;
  * @author Kim R.
  *
  */
-public abstract class AbstractResource {
+public abstract class AbstractResourceEndpoint {
 	
 	private final String resourceName;
 	
 	private final URL resourceUrl;
 	
-	public AbstractResource(final String name, final URL url)
+	public AbstractResourceEndpoint(final String name, final URL url)
 	{
 		resourceName = name;
 		resourceUrl  = url;

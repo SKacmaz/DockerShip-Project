@@ -3,7 +3,9 @@ package resourcerer;
 import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 
@@ -12,21 +14,24 @@ import core.Haven;
 public class Resourcerer {
 
 	static final Logger LOGGER = Logger.getLogger(Resourcerer.class.getName());
-	private List<AbstractResource> resources;
+	private Map<Long, String> resourceIds;
+	private List<AbstractResourceEndpoint> resourceEndpoints;
+	
+	
 
-	public Resourcerer(AbstractResource... resourcesToWatch) 
+	public Resourcerer(AbstractResourceEndpoint... resourcesToWatch) 
 	{
-		resources = new ArrayList<AbstractResource>();
-		for (AbstractResource resource: resourcesToWatch)
+		resourceIds = new HashMap<>();
+		resourceEndpoints = new ArrayList<AbstractResourceEndpoint>();
+		for (AbstractResourceEndpoint resource: resourcesToWatch)
 		{
-			resources.add(resource);
+			resourceEndpoints.add(resource);
 		}
-		
 		
 		//TODO Remove Temporary Resource management
 		try {
 			LOGGER.debug("adding Docker Resource");
-			resources.add(new DockerResource());
+			resourceEndpoints.add(new DockerResourceEndpoint());
 		} catch (MalformedURLException e) {
 			LOGGER.error("Could not create Docker resource: " + e);
 		}
@@ -37,7 +42,7 @@ public class Resourcerer {
 	 * @param resource
 	 * @return
 	 */
-	public String getJsonFrom(AbstractResource resource)
+	public String getJsonFrom(AbstractResourceEndpoint resource)
 	{
 		LOGGER.debug("getting Json from: " + resource.getResourceName());
 		String result = "";
@@ -76,9 +81,9 @@ public class Resourcerer {
 	 * @param name
 	 * @return
 	 */
-	public AbstractResource getAttachedResource(String name)
+	public AbstractResourceEndpoint getAttachedResource(String name)
 	{
 		//TODO remove temporary solution
-		return resources.get(0);
+		return resourceEndpoints.get(0);
 	}
 }
