@@ -1,17 +1,21 @@
 package model;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Resource {
-	private long id;
+public class DockerResource extends AResource{
+
 	private String type;
 	private User user;
+	private Map<String, Object> custom = new HashMap<>();
 	
-	public Resource(){super();}
-	public Resource(long id, String type, User user){
+	public DockerResource(){super();}
+	public DockerResource(long id, String type, User user){
 		super();
-		this.id = id;
+
 		this.type = type;
 		this.user = user;
 	}
@@ -32,12 +36,6 @@ public class Resource {
 		this.user = (User) json.get("user");
 	}
 	
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
 	public String getType() {
 		return type;
 	}
@@ -50,5 +48,10 @@ public class Resource {
 	public void setUser(User user) {
 		this.user = user;
 	}
-
+	public Map<String, Object> getCustom() {
+		return custom;
+	}
+	public void setCustom(Map<String, Object> custom) {
+		this.custom = custom;
+	}
 }

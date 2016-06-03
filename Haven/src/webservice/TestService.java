@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
 import org.json.*;
 
 import core.Haven;
-import model.Resource;
+import model.DockerResource;
 
 @Path("/test")
 public class TestService {
@@ -62,7 +62,7 @@ public class TestService {
     @Produces("application/json")
     public Response listTest(@QueryParam("param") String param) {
 		JSONObject json = new JSONObject();
-		Resource r = new Resource();
+		DockerResource r = new DockerResource();
 		try {
 			json.put("key", "needs investigation");
 			// TODO Test how to send a list of Objects via JSON
