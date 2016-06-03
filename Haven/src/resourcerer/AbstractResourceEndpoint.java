@@ -3,9 +3,9 @@ package resourcerer;
 import java.net.URL;
 
 /**
- * 
- * @author Kim R.
+ * Representation of an Endpoint that gives information about resources.
  *
+ * @author Kim R.
  */
 public abstract class AbstractResourceEndpoint {
 	

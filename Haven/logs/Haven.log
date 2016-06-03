@@ -48,3 +48,37 @@
 2016-05-27 14:07:39 DEBUG Haven:55 - Running...
 2016-05-27 14:07:49 DEBUG Haven:55 - Running...
 2016-05-27 14:07:59 DEBUG Haven:55 - Running...
+2016-06-03 15:14:16 INFO  Haven:29 - 
+2016-06-03 15:14:16 INFO  Haven:30 - ###############################
+2016-06-03 15:14:16 INFO  Haven:31 -    Starting Haven
+2016-06-03 15:14:16 INFO  Haven:32 - ###############################
+2016-06-03 15:14:16 INFO  Haven:35 - Starting Resourcerer
+2016-06-03 15:14:16 DEBUG Resourcerer:28 - adding Docker Resource
+2016-06-03 15:14:16 INFO  DockerResource:15 - Initializing Docker Resource with URL: http://ec2-52-28-184-227.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-06-03 15:14:16 DEBUG Resourcerer:42 - getting Json from: DockerSwarm
+2016-06-03 15:14:16 DEBUG Resourcerer:59 - getting Json from Url: http://ec2-52-28-184-227.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-06-03 15:14:16 DEBUG Haven:39 - Result form running Schmendrik: [{"Id":"sha256:c54bba0461581bfb6dd9ed47d49f8e9f2af1d841546524ea4a02f31e410eb20c","ParentId":"","RepoTags":["swarm:latest"],"RepoDigests":null,"Created":1464372533,"Size":19338774,"VirtualSize":19338774,"Labels":{}},{"Id":"sha256:09ea64205e553163a9d7790c9688cff73e3dc2439a8382021a2b2223545f01ff","ParentId":"","RepoTags":["progrium/consul:latest"],"RepoDigests":null,"Created":1435694381,"Size":69425549,"VirtualSize":69425549,"Labels":{}}]
+2016-06-03 15:14:16 INFO  Haven:42 - Starting Scanner
+2016-06-03 15:14:18 INFO  Haven:73 - Current URL is : http://172.21.55.97:8081
+2016-06-03 15:14:18 DEBUG Haven:58 - Please, enter 0 to exit.
+2016-06-03 15:14:28 DEBUG Haven:55 - Running...
+2016-06-03 15:14:38 DEBUG Haven:55 - Running...
+2016-06-03 15:14:48 DEBUG Haven:55 - Running...
+2016-06-03 15:14:58 DEBUG Haven:55 - Running...
+2016-06-03 15:15:08 DEBUG Haven:55 - Running...
+2016-06-03 15:15:18 DEBUG Haven:55 - Running...
+2016-06-03 15:15:28 DEBUG Haven:55 - Running...
+2016-06-03 15:15:38 DEBUG Haven:55 - Running...
+2016-06-03 17:35:55 INFO  Haven:29 - 
+2016-06-03 17:35:55 INFO  Haven:30 - ###############################
+2016-06-03 17:35:55 INFO  Haven:31 -    Starting Haven
+2016-06-03 17:35:55 INFO  Haven:32 - ###############################
+2016-06-03 17:35:55 INFO  Haven:35 - Starting Resourcerer
+2016-06-03 17:35:55 DEBUG Resourcerer:36 - adding Docker Resource
+2016-06-03 17:35:55 INFO  DockerResourceEndpoint:15 - Initializing Docker Resource with URL: http://ec2-52-28-184-227.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-06-03 17:35:55 DEBUG Resourcerer:50 - getting Json from: DockerSwarm
+2016-06-03 17:35:55 DEBUG Resourcerer:67 - getting Json from Url: http://ec2-52-28-184-227.eu-central-1.compute.amazonaws.com:2375/images/json
+2016-06-03 17:35:55 DEBUG Haven:39 - Result form running Schmendrik: [{"Id":"sha256:c54bba0461581bfb6dd9ed47d49f8e9f2af1d841546524ea4a02f31e410eb20c","ParentId":"","RepoTags":["swarm:latest"],"RepoDigests":null,"Created":1464372533,"Size":19338774,"VirtualSize":19338774,"Labels":{}},{"Id":"sha256:09ea64205e553163a9d7790c9688cff73e3dc2439a8382021a2b2223545f01ff","ParentId":"","RepoTags":["progrium/consul:latest"],"RepoDigests":null,"Created":1435694381,"Size":69425549,"VirtualSize":69425549,"Labels":{}}]
+2016-06-03 17:35:55 INFO  Haven:42 - Starting Scanner
+2016-06-03 17:35:57 INFO  Haven:73 - Current URL is : http://172.21.69.37:8081
+2016-06-03 17:35:57 DEBUG Haven:58 - Please, enter 0 to exit.

@@ -11,13 +11,16 @@ import org.apache.log4j.Logger;
 
 import core.Haven;
 
+/**
+ * Handles the different resource endpoints and collects the information about the resources.
+ *
+ * @author Kim
+ */
 public class Resourcerer {
 
 	static final Logger LOGGER = Logger.getLogger(Resourcerer.class.getName());
 	private Map<Long, String> resourceIds;
 	private List<AbstractResourceEndpoint> resourceEndpoints;
-	
-	
 
 	public Resourcerer(AbstractResourceEndpoint... resourcesToWatch) 
 	{
