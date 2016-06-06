@@ -22,7 +22,9 @@ public class DockerResource extends AbstractResource{
 		this.dockerId = dockerId;
 	}
 	
-	public JSONObject toJSON() throws JSONException{
+	@Override
+	public JSONObject toJSON() throws JSONException
+	{
 		JSONObject json = new JSONObject();
 		
 		json.put("id", this.id);

@@ -15,76 +15,67 @@ import model.DockerResource;
 
 @Path("/test")
 public class TestService {
-	
+
 	static final Logger LOGGER = Logger.getLogger(TestService.class.getName());
-    
+
 	@GET
-    @Path("/testDefaultAnswer")
-    @Produces("application/json")
-    public Response test() {
+	@Path("/testDefaultAnswer")
+	@Produces("application/json")
+	public Response test() {
 		LOGGER.info("#");
 		LOGGER.info("GET test/testDefaultAnswer");
 		LOGGER.info("#");
-		
+
 		JSONObject json = new JSONObject();
-		
+
 		try {
 			json.put("param", "default");
 
-	        return Response.ok(
-			        json.toString(),
-			        MediaType.APPLICATION_JSON_TYPE
-			).build();
-        
+			return Response.ok(json.toString(), MediaType.APPLICATION_JSON_TYPE).build();
+
 		} catch (JSONException e1) {
 			LOGGER.error("Json Request failed with: " + e1);
 			return Response.serverError().build();
 		}
-    }
-	
+	}
+
 	@GET
-    @Path("/testParamAnswer")
-    @Produces("application/json")
-    public Response test(@QueryParam("param") String param) {
+	@Path("/testParamAnswer")
+	@Produces("application/json")
+	public Response test(@QueryParam("param") String param) {
 		LOGGER.info("#");
 		LOGGER.info("GET test/testParamAnswer with: " + param);
 		LOGGER.info("#");
-		
+
 		JSONObject json = new JSONObject();
-		
+
 		try {
 			json.put("param", param);
 
-	        return Response.ok(
-			        json.toString(),
-			        MediaType.APPLICATION_JSON_TYPE
-			).build();
+			return Response.ok(json.toString(), MediaType.APPLICATION_JSON_TYPE).build();
 		} catch (JSONException e1) {
 			LOGGER.error("Json Request failed with: " + e1);
-            return Response.serverError().build();
+			return Response.serverError().build();
 		}
-    }
-	
+	}
+
 	@GET
-    @Path("/testListAnswer")
-    @Produces("application/json")
-    public Response listTest(@QueryParam("param") String param) {
+	@Path("/testListAnswer")
+	@Produces("application/json")
+	public Response listTest(@QueryParam("param") String param) {
 		LOGGER.info("#");
 		LOGGER.info("GET test/testListAnswer with: " + param);
 		LOGGER.info("#");
-		
+
 		JSONObject json = new JSONObject();
 		DockerResource r = new DockerResource();
 		try {
 			json.put("key", "needs investigation");
 			// TODO Test how to send a list of Objects via JSON
-	        return Response.ok(
-			        json.toString(),
-			        MediaType.APPLICATION_JSON_TYPE
-			).build();
+			return Response.ok(json.toString(), MediaType.APPLICATION_JSON_TYPE).build();
 		} catch (JSONException e1) {
 			LOGGER.error("Json Request failed with: " + e1);
-            return Response.serverError().build();
+			return Response.serverError().build();
 		}
-    }
+	}
 }
