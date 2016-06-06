@@ -1,6 +1,7 @@
 package core;
 
 import java.util.Scanner;
+import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.io.IOException;
@@ -11,7 +12,8 @@ import org.glassfish.grizzly.http.server.HttpServer;
 
 import com.sun.jersey.api.container.grizzly2.GrizzlyServerFactory;
 
-import resourcerer.DockerResourceEndpoint;
+import model.IResource;
+import resourcerer.DockerEndpoint;
 import resourcerer.Resourcerer;
 
 public class Haven {
@@ -31,14 +33,20 @@ public class Haven {
 		LOGGER.info("   Starting Haven");
 		LOGGER.info("###############################");
 
-		// start Resourcer
+		// Start Resourcerer
+		LOGGER.info("##########");
 		LOGGER.info("Starting Resourcerer");
+		Resourcerer schmendrik = new Resourcerer(new DockerEndpoint());
+		String r = schmendrik.getEndpoint("DockerSwarm").testEnpoint();
+		LOGGER.info("Result from testing endpoint: "  + r);
 		
-		Resourcerer schmendrik = new Resourcerer();
-		String result = schmendrik.getJsonFrom(schmendrik.getAttachedResource(""));
-		LOGGER.debug("Result form running Schmendrik: " + result);
+		//Temporary for testing
+		Set<IResource> foundResources = schmendrik.getResourceSet();
+		LOGGER.info("Discovered " + foundResources.size() + " active resources");
+		
 
 		// Start Scanner
+		LOGGER.info("##########");
 		LOGGER.info("Starting Scanner");
 		Scanner scanner = new Scanner(System.in);
 

@@ -17,15 +17,19 @@ import handler.ResourceHandler;
 public class ResourceService {
 
 	static final Logger LOGGER = Logger.getLogger(TestService.class.getName());
-    private ResourceHandler resources = new ResourceHandler();
+    private ResourceHandler handler = new ResourceHandler();
     
 	@GET
     @Path("/id")
     @Produces("application/json")
     public Response getResourceById(@QueryParam("id") long id) {
+		LOGGER.info("#");
+		LOGGER.info("GET resource/id with: " + id);
+		LOGGER.info("#");
+		
 		JSONObject json = new JSONObject();
 		try {
-			json = resources.getResourceById(id).toJSON();
+			json = handler.getResourceById(id).toJSON();
 			//TODO check how to send a List of Objects with JSON -> TestService.java
 			return Response.ok(
 			        json.toString(),

@@ -5,10 +5,20 @@ import java.util.List;
 
 import model.DockerResource;
 
+/**
+ * 
+ *
+ * @author Jochen
+ */
 public class ResourceHandler {
-	private static List<DockerResource> resources = new ArrayList<DockerResource>();
+	private List<DockerResource> resources = new ArrayList<DockerResource>();
 
 
+	/**
+	 * 
+	 * @param id
+	 * @return
+	 */
 	public DockerResource getResourceById(long id) {
 		for(DockerResource r : resources){
 			if(r.getId() == id){

@@ -24,4 +24,11 @@ public interface IResourcerer {
 	 * @return the resource matching the id.
 	 */
 	public IResource getResourceById(long id);
+	
+	/**
+	 * Returns the attached Endpoint, if name matches known list of endpoints.
+	 * @param name the name of the Endpoint
+	 * @return the resource endpoint, null if not found.
+	 */
+	public AbstractEndpoint getEndpoint(String name);
 }

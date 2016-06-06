@@ -10,14 +10,16 @@ public class DockerResource extends AbstractResource{
 
 	private String type;
 	private User user;
+	private String dockerId;
 	private Map<String, Object> custom = new HashMap<>();
 	
 	public DockerResource(){super();}
-	public DockerResource(long id, String type, User user){
+	public DockerResource(long id, String type, User user, String dockerId){
 		super();
 
 		this.type = type;
 		this.user = user;
+		this.dockerId = dockerId;
 	}
 	
 	public JSONObject toJSON() throws JSONException{

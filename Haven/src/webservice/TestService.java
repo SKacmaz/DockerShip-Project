@@ -22,6 +22,10 @@ public class TestService {
     @Path("/testDefaultAnswer")
     @Produces("application/json")
     public Response test() {
+		LOGGER.info("#");
+		LOGGER.info("GET test/testDefaultAnswer");
+		LOGGER.info("#");
+		
 		JSONObject json = new JSONObject();
 		
 		try {
@@ -42,6 +46,10 @@ public class TestService {
     @Path("/testParamAnswer")
     @Produces("application/json")
     public Response test(@QueryParam("param") String param) {
+		LOGGER.info("#");
+		LOGGER.info("GET test/testParamAnswer with: " + param);
+		LOGGER.info("#");
+		
 		JSONObject json = new JSONObject();
 		
 		try {
@@ -61,6 +69,10 @@ public class TestService {
     @Path("/testListAnswer")
     @Produces("application/json")
     public Response listTest(@QueryParam("param") String param) {
+		LOGGER.info("#");
+		LOGGER.info("GET test/testListAnswer with: " + param);
+		LOGGER.info("#");
+		
 		JSONObject json = new JSONObject();
 		DockerResource r = new DockerResource();
 		try {
