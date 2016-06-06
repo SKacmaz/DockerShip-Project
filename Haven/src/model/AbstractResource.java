@@ -2,6 +2,9 @@ package model;
 
 import java.util.Date;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 /**
  * 
  * @author Jochen
@@ -41,4 +44,8 @@ public abstract class AbstractResource implements IResource{
 	public void setStart(Date start) {
 		this.start = start;
 	}
+	
+	public abstract JSONObject toJSON() throws JSONException;
+	public abstract void fromJSON(JSONObject json) throws JSONException;
+	
 }

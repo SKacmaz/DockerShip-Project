@@ -1,5 +1,6 @@
 package model;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,18 +27,20 @@ public class DockerResource extends AbstractResource{
 	public JSONObject toJSON() throws JSONException
 	{
 		JSONObject json = new JSONObject();
-		
+
 		json.put("id", this.id);
+		json.put("start", this.start);
 		json.put("type", this.type);
 		json.put("user", this.user);
 		
 		return json;
 	}
 	
-	public void loadFromJSON(JSONObject json) throws JSONException{
+	public void fromJSON(JSONObject json) throws JSONException{
 		this.id = json.getLong("id");
 		this.type = json.getString("type");
 		this.user = (User) json.get("user");
+		this.start = (Date) json.get("start");
 	}
 	
 	public String getType() {

@@ -1,7 +1,5 @@
 package webservice;
 
-import java.util.Iterator;
-
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -15,12 +13,6 @@ import org.codehaus.jettison.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.sun.jersey.api.core.InjectParam;
-import com.sun.jersey.spi.inject.Inject;
-
-import handler.ResourceHandler;
-import model.IResource;
-import resourcerer.IResourcerer;
 import resourcerer.Resourcerer;
 
 @Path("/resources")
@@ -32,6 +24,7 @@ public class ResourceService {
 	static final Logger LOGGER = Logger.getLogger(TestService.class.getName());
     
 	@GET
+	@Path("/all")
 	@Produces("application/json")
 	public Response getResources()
 	{
@@ -40,9 +33,10 @@ public class ResourceService {
 		LOGGER.info("#");
 		
 		JSONObject json = new JSONObject();
+		
 		try {
 			
-			Iterator<IResource> iterator = sourcerer.getResourceSet().iterator();
+			//Iterator<IResource> iterator = sourcerer.getResourceSet().iterator();
 			JSONArray arr = new JSONArray(sourcerer.getResourceSet());
 			json.put("Resources", arr);
 			
@@ -62,14 +56,16 @@ public class ResourceService {
     @Path("/id")
     @Produces("application/json")
     public Response getResourceById(@QueryParam("id") long id) {
+		
 		LOGGER.info("#");
 		LOGGER.info("GET resources/id with: " + id);
 		LOGGER.info("#");
 		
 		JSONObject json = new JSONObject();
+		
 		try {
 			json = sourcerer.getResourceById(id).toJSON();
-			//TODO check how to send a List of Objects with JSON -> TestService.java
+			
 			return Response.ok(
 			        json.toString(),
 			        MediaType.APPLICATION_JSON_TYPE

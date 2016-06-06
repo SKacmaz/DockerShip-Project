@@ -8,10 +8,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.apache.log4j.Logger;
-import org.json.*;
-
-import core.Haven;
-import model.DockerResource;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 @Path("/test")
 public class TestService {
@@ -68,7 +66,6 @@ public class TestService {
 		LOGGER.info("#");
 
 		JSONObject json = new JSONObject();
-		DockerResource r = new DockerResource();
 		try {
 			json.put("key", "needs investigation");
 			// TODO Test how to send a list of Objects via JSON
