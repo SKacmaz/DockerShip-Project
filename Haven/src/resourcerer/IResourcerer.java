@@ -2,6 +2,8 @@ package resourcerer;
 
 import java.util.Set;
 
+import org.json.JSONObject;
+
 import model.IResource;
 import model.User;
 
@@ -13,10 +15,10 @@ import model.User;
 public interface IResourcerer {
 	
 	/**
-	 * Gets a set of all known resources.
+	 * Gets an array of all known resources.
 	 * @return a set of all running resources known to IResourcerer
 	 */
-	public Set<IResource> getResourceSet();
+	public IResource[] getResourceSet();
 	
 	/**
 	 * Returns a resource with the matching id.

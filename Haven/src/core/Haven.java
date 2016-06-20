@@ -9,11 +9,13 @@ import java.net.InetAddress;
 
 import org.apache.log4j.Logger;
 import org.glassfish.grizzly.http.server.HttpServer;
+import org.json.JSONObject;
 
 import com.sun.jersey.api.container.grizzly2.GrizzlyServerFactory;
 
 import model.IResource;
 import resourcerer.DockerEndpoint;
+import resourcerer.MockedEndpoint;
 import resourcerer.Resourcerer;
 
 public class Haven {
@@ -26,6 +28,8 @@ public class Haven {
 	static String localIP; // server ip
 	static HttpServer server;
 	static Timer timer;
+	
+	private final static boolean IS_MOCKED = true; //IF CHANGED ALSO ADAPT MyContextResolver!!
 
 	public static void main(String[] args) throws IOException {
 		LOGGER.info("");
@@ -36,13 +40,25 @@ public class Haven {
 		// Start Resourcerer
 		LOGGER.info("##########");
 		LOGGER.info("Starting Resourcerer");
-		Resourcerer schmendrik = new Resourcerer(new DockerEndpoint());
-		String r = schmendrik.getEndpoint("DockerSwarm").testEnpoint();
-		LOGGER.info("Result from testing endpoint: "  + r);
+		
+		Resourcerer schmendrik;
+		
+		if(IS_MOCKED)
+		{
+		 schmendrik = new Resourcerer(new MockedEndpoint());
+		 String r = schmendrik.getEndpoint("MockedEndpoint").testEnpoint();
+		 LOGGER.info("Result from testing endpoint: "  + r);
+		}
+		else
+		{
+			schmendrik = new Resourcerer(new DockerEndpoint());
+			String r = schmendrik.getEndpoint("DockerSwarm").testEnpoint();
+			LOGGER.info("Result from testing endpoint: "  + r);
+		}
 		
 		//Temporary for testing
-		Set<IResource> foundResources = schmendrik.getResourceSet();
-		LOGGER.info("Discovered " + foundResources.size() + " active resources");
+		IResource[] foundResources = schmendrik.getResourceSet();
+		LOGGER.info("Discovered " + foundResources.length + " active resources");
 		
 
 		// Start Scanner
@@ -66,6 +82,7 @@ public class Haven {
 		LOGGER.debug("Please, enter 0 to exit.");
 		int i = scanner.nextInt();
 		if (i == 0) {
+			scanner.close();
 			timer.cancel();
 		}
 	}

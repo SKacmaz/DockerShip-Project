@@ -43,7 +43,7 @@ public class DockerEndpoint extends AbstractEndpoint
 	 */
 	public DockerEndpoint() throws MalformedURLException
 	{
-		super("DockerSwarm", new URL (CURRENT_URL));
+		super("DockerSwarm", new URL(CURRENT_URL));
 		LOGGER.info("Initializing Docker Resource with URL: " + CURRENT_URL);
 		
 		defaultUser = new User(0,"Test","User");
@@ -63,7 +63,7 @@ public class DockerEndpoint extends AbstractEndpoint
 				JSONObject resource = containerArray.getJSONObject(i);
 				
 				IResource res = new DockerResource(
-						getCrator().getNewId(),
+						getCreator().getNewId(),
 						"default",
 						defaultUser, 
 						

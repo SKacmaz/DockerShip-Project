@@ -14,10 +14,8 @@ public class DockerResource extends AbstractResource{
 	private String dockerId;
 	private Map<String, Object> custom = new HashMap<>();
 	
-	public DockerResource(){super();}
 	public DockerResource(long id, String type, User user, String dockerId){
-		super();
-
+		this.id = id;
 		this.type = type;
 		this.user = user;
 		this.dockerId = dockerId;
@@ -60,5 +58,13 @@ public class DockerResource extends AbstractResource{
 	}
 	public void setCustom(Map<String, Object> custom) {
 		this.custom = custom;
+	}
+	
+	@Override
+	public String toString()
+	{
+		String result = 
+			"id: " + this.id + " start: " + this.start + " type: " + this.type + " user: " + this.user;
+		return result.toString();
 	}
 }

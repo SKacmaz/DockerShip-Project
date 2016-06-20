@@ -22,6 +22,8 @@ public abstract class AbstractEndpoint {
 	{
 		resourceName = name;
 		resourceUrl  = url;
+		
+		creator = new IdCreator();
 	}
 
 	/**
@@ -34,11 +36,6 @@ public abstract class AbstractEndpoint {
 
 	public URL getResourceUrl() {
 		return resourceUrl;
-	}
-	
-	public void setCounter(final IdCreator creator)
-	{
-		this.creator = creator;
 	}
 	
 	/**
@@ -55,7 +52,7 @@ public abstract class AbstractEndpoint {
 	 */
 	public abstract String testEnpoint();
 	
-	protected IdCreator getCrator()
+	protected IdCreator getCreator()
 	{
 		return creator;
 	}

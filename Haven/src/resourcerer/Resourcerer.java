@@ -11,6 +11,10 @@ import java.util.Set;
 import java.util.UUID;
 
 import org.apache.log4j.Logger;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.google.gson.Gson;
 
 import core.Haven;
 import model.IResource;
@@ -27,7 +31,6 @@ public class Resourcerer implements IResourcerer
 	private List<AbstractEndpoint> resourceEndpoints;
 	private Set<IResource> resources;
 	
-	protected static IdCreator idMaker;
 	/**
 	 * Creates a new Resourcerer that has access to the given endpoints.
 	 * 
@@ -39,17 +42,19 @@ public class Resourcerer implements IResourcerer
 		resourceMap = new HashMap<>();
 		resourceEndpoints = new ArrayList<AbstractEndpoint>();
 		resources = new HashSet<>();
-		idMaker = new IdCreator();
-		
+
 		for (AbstractEndpoint endpoint: endpointsToWatch)
 		{
 			resourceEndpoints.add(endpoint);
-			endpoint.setCounter(idMaker);
 		}
 	}
 	
 	@Override
-	public Set<IResource> getResourceSet() {
+	public IResource[] getResourceSet() {
+		
+		//empty resources
+		resources.clear();
+		
 		for(AbstractEndpoint point: resourceEndpoints)
 		{
 			Set<IResource> pointResources = point.getResources();
@@ -58,7 +63,8 @@ public class Resourcerer implements IResourcerer
 				resources.add(res);
 			}
 		}
-		return (HashSet<IResource>) resources;
+		
+		return  resources.toArray(new IResource[resources.size()]);
 	}
 
 	@Override

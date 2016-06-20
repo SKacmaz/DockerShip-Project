@@ -8,12 +8,14 @@ import javax.ws.rs.ext.Provider;
 import com.sun.jersey.spi.inject.SingletonTypeInjectableProvider;
 
 import resourcerer.DockerEndpoint;
+import resourcerer.MockedEndpoint;
 import resourcerer.Resourcerer;
 
 @Provider
 public class MyContextResolver extends SingletonTypeInjectableProvider<Context, Resourcerer>{
 	public MyContextResolver() throws MalformedURLException {
-		super(Resourcerer.class, new Resourcerer(new DockerEndpoint()));
+//		super(Resourcerer.class, new Resourcerer(new DockerEndpoint()));
+		super(Resourcerer.class, new Resourcerer(new MockedEndpoint()));
 	}
 }
 

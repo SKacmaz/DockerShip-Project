@@ -13,6 +13,8 @@ import org.codehaus.jettison.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.google.gson.Gson;
+
 import resourcerer.Resourcerer;
 
 @Path("/resources")
@@ -32,23 +34,17 @@ public class ResourceService {
 		LOGGER.info("GET resources/");
 		LOGGER.info("#");
 		
-		JSONObject json = new JSONObject();
+//		JSONObject json = new JSONObject();
+		Gson gson = new Gson();
 		
-		try {
-			
-			//Iterator<IResource> iterator = sourcerer.getResourceSet().iterator();
-			JSONArray arr = new JSONArray(sourcerer.getResourceSet());
-			json.put("Resources", arr);
-			
-			return Response.ok(
-			        json.toString(),
-			        MediaType.APPLICATION_JSON_TYPE
-			).build();
-	    
-		} catch (JSONException e1) {
-			LOGGER.error("Json Request failed with: " + e1);
-			return Response.serverError().build();
-		}
+		JsonResourceContainer jsonContainer = new JsonResourceContainer();
+		jsonContainer.setResourceList(sourcerer.getResourceSet());
+		String json = gson.toJson(jsonContainer); 
+		
+		return Response.ok(
+		        json,
+		        MediaType.APPLICATION_JSON_TYPE
+		).build();
 		
 	}
 
