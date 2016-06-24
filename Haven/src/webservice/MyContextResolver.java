@@ -14,8 +14,8 @@ import resourcerer.Resourcerer;
 @Provider
 public class MyContextResolver extends SingletonTypeInjectableProvider<Context, Resourcerer>{
 	public MyContextResolver() throws MalformedURLException {
-//		super(Resourcerer.class, new Resourcerer(new DockerEndpoint()));
-		super(Resourcerer.class, new Resourcerer(new MockedEndpoint()));
+		super(Resourcerer.class, new Resourcerer(new DockerEndpoint()));
+//		super(Resourcerer.class, new Resourcerer(new MockedEndpoint()));
 	}
 }
 

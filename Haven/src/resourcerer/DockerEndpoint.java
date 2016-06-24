@@ -10,6 +10,7 @@ import java.net.URI;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
@@ -27,11 +28,12 @@ public class DockerEndpoint extends AbstractEndpoint
 	static final Logger LOGGER = Logger.getLogger(DockerEndpoint.class.getName());
 	
 	private static final String CURRENT_URL = 
-			"http://ec2-52-28-184-227.eu-central-1.compute.amazonaws.com:2375";
+			"http://52.58.82.104:2375";
 	
 	private static final String PATH_IMAGES = "/images/json";
 	
-	private static final String PATH_CONTAINER_ALL = "/containers/json?all=1";
+	private static final String PATH_CONTAINER_ALL = "/containers/json";
+//	private static final String PATH_CONTAINER_ALL = "/containers/json?all=1";
 	
 	private static final String PATH_CONTAINER_ACTIVE = "/containers/json?all=0";
 	
@@ -60,15 +62,21 @@ public class DockerEndpoint extends AbstractEndpoint
 			JSONArray containerArray = r.getJSONArray(CONTAINER_KEY);
 			
 			for (int i = 0; i < containerArray.length(); i++) {
-				JSONObject resource = containerArray.getJSONObject(i);
+				JSONObject container = containerArray.getJSONObject(i);
 				
-				IResource res = new DockerResource(
+				JSONObject labels =  (JSONObject) container.get("Labels");
+				
+				User user = new User(
+						getCreator().getNewUserId(), 
+						labels.get("user.firstname").toString(), 
+						labels.get("user.lastname").toString());
+				
+				IResource newResource = new DockerResource(
 						getCreator().getNewId(),
-						"default",
-						defaultUser, 
-						
-						resource.get("Id").toString());
-				set.add(res);
+						labels.get("type").toString(),
+						user, 
+						container.get("Id").toString());
+				set.add(newResource);
 			}
 		} catch (JSONException e) {
 			LOGGER.warn("Could not get object from json",e);

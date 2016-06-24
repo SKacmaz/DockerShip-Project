@@ -23,7 +23,7 @@ public class ResourceService {
 	@Context
 	Resourcerer sourcerer;
 	
-	static final Logger LOGGER = Logger.getLogger(TestService.class.getName());
+	static final Logger LOGGER = Logger.getLogger(ResourceService.class.getName());
     
 	@GET
 	@Path("/all")
