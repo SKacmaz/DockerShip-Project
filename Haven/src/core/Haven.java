@@ -29,7 +29,7 @@ public class Haven {
 	static HttpServer server;
 	static Timer timer;
 	
-	private final static boolean IS_MOCKED = true; //IF CHANGED ALSO ADAPT MyContextResolver!!
+	private final static boolean IS_MOCKED = false; //IF CHANGED ALSO ADAPT MyContextResolver!!
 
 	public static void main(String[] args) throws IOException {
 		LOGGER.info("");
@@ -95,6 +95,6 @@ public class Haven {
 
 		server = GrizzlyServerFactory.createHttpServer("http://0.0.0.0:8081");
 
-		LOGGER.info("Current URL is : " + url);
+		LOGGER.info("Current URL of HAVEN is : " + url);
 	}
 }

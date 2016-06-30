@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "656b9eafee663b6d2261c6d0912d0b49cd0c88700af51d16c2de61200044f466",
+    "Names": [
+      "/suspicious_swirles"
+    ],
+    "Image": "ubuntu",
+    "ImageID": "sha256:2fa927b5cdd31cdec0027ff4f45ef4343795c7a2d19a9af4f32425132a222330",
+    "Command": "/bin/sh -c 'while true; do echo we can do it; sleep 1; done'",
+    "Created": 1466773555,
+    "Ports": [],
+    "Labels": {
+      "type": "blue",
+      "user.firstname": "Kim",
+      "user.lastname": "Possible"
+    },
+    "State": "running",
+    "Status": "Up 6 seconds",
+    "HostConfig": {
+      "NetworkMode": "default"
+    },
+    "NetworkSettings": {
+      "Networks": {
+        "bridge": {
+          "IPAMConfig": null,
+          "Links": null,
+          "Aliases": null,
+          "NetworkID": "",
+          "EndpointID": "a9e41fa9333ca945a5c41648676b56fafe76041a991ba7959a566fe12a2473c1",
+          "Gateway": "172.17.0.1",
+          "IPAddress": "172.17.0.3",
+          "IPPrefixLen": 16,
+          "IPv6Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "MacAddress": "02:42:ac:11:00:03"
+        }
+      }
+    },
+    "Mounts": []
+  },
+  {
+    "Id": "1e755dd130b55912200b61defdaf9d724a67484a4cdae32c9b148b87cebd466c",
+    "Names": [
+      "/tender_pasteur"
+    ],
+    "Image": "ubuntu",
+    "ImageID": "sha256:2fa927b5cdd31cdec0027ff4f45ef4343795c7a2d19a9af4f32425132a222330",
+    "Command": "/bin/sh -c 'while true; do echo still alive; sleep 1; done'",
+    "Created": 1466773400,
+    "Ports": [],
+    "Labels": {
+      "type": "yellow",
+      "user.firstname": "Bart",
+      "user.lastname": "Simpson"
+    },
+    "State": "running",
+    "Status": "Up 2 minutes",
+    "HostConfig": {
+      "NetworkMode": "default"
+    },
+    "NetworkSettings": {
+      "Networks": {
+        "bridge": {
+          "IPAMConfig": null,
+          "Links": null,
+          "Aliases": null,
+          "NetworkID": "",
+          "EndpointID": "979274ae3e30a9219cf46f2c0ef9d8453f2121c39e1ca25ae5b3005c6c56c948",
+          "Gateway": "172.17.0.1",
+          "IPAddress": "172.17.0.2",
+          "IPPrefixLen": 16,
+          "IPv6Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "MacAddress": "02:42:ac:11:00:02"
+        }
+      }
+    },
+    "Mounts": []
+  }
+]

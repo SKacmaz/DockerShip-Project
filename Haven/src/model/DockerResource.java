@@ -21,6 +21,14 @@ public class DockerResource extends AbstractResource{
 		this.dockerId = dockerId;
 	}
 	
+	public DockerResource(long id, String type, User user, String dockerId, Date start){
+		this.id = id;
+		this.type = type;
+		this.user = user;
+		this.dockerId = dockerId;
+		this.start = start;
+	}
+	
 	@Override
 	public JSONObject toJSON() throws JSONException
 	{
