@@ -715,3 +715,262 @@ org.json.JSONException: A JSONObject text must begin with '{' at character 0 of
 2016-06-20 13:55:36 DEBUG Haven:79 - Running...
 2016-06-20 13:55:46 DEBUG Haven:79 - Running...
 2016-06-20 13:55:56 DEBUG Haven:79 - Running...
+2016-06-24 14:34:47 INFO  Haven:35 - 
+2016-06-24 14:34:47 INFO  Haven:36 - ###############################
+2016-06-24 14:34:47 INFO  Haven:37 -    Starting Haven
+2016-06-24 14:34:47 INFO  Haven:38 - ###############################
+2016-06-24 14:34:47 INFO  Haven:41 - ##########
+2016-06-24 14:34:47 INFO  Haven:42 - Starting Resourcerer
+2016-06-24 14:34:47 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 14:34:47 INFO  Haven:50 - Result from testing endpoint: {mocked Endpoint works: true}
+2016-06-24 14:34:47 INFO  Haven:61 - Discovered 1 active resources
+2016-06-24 14:34:47 INFO  Haven:65 - ##########
+2016-06-24 14:34:47 INFO  Haven:66 - Starting Scanner
+2016-06-24 14:34:48 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 14:34:49 INFO  Haven:98 - Current URL is : http://192.168.56.1:8081
+2016-06-24 14:34:49 DEBUG Haven:82 - Please, enter 0 to exit.
+2016-06-24 14:34:59 DEBUG Haven:79 - Running...
+2016-06-24 14:35:09 DEBUG Haven:79 - Running...
+2016-06-24 14:35:18 INFO  TestService:30 - #
+2016-06-24 14:35:18 INFO  TestService:31 - GET resources/
+2016-06-24 14:35:18 INFO  TestService:32 - #
+2016-06-24 14:35:19 DEBUG Haven:79 - Running...
+2016-06-24 14:35:39 INFO  Haven:35 - 
+2016-06-24 14:35:39 INFO  Haven:36 - ###############################
+2016-06-24 14:35:39 INFO  Haven:37 -    Starting Haven
+2016-06-24 14:35:39 INFO  Haven:38 - ###############################
+2016-06-24 14:35:39 INFO  Haven:41 - ##########
+2016-06-24 14:35:39 INFO  Haven:42 - Starting Resourcerer
+2016-06-24 14:35:39 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 14:35:39 INFO  Haven:50 - Result from testing endpoint: {mocked Endpoint works: true}
+2016-06-24 14:35:39 INFO  Haven:61 - Discovered 1 active resources
+2016-06-24 14:35:39 INFO  Haven:65 - ##########
+2016-06-24 14:35:39 INFO  Haven:66 - Starting Scanner
+2016-06-24 14:35:41 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 14:35:41 INFO  Haven:98 - Current URL is : http://192.168.56.1:8081
+2016-06-24 14:35:41 DEBUG Haven:82 - Please, enter 0 to exit.
+2016-06-24 14:35:48 INFO  TestService:30 - #
+2016-06-24 14:35:48 INFO  TestService:31 - GET resources/
+2016-06-24 14:35:48 INFO  TestService:32 - #
+2016-06-24 14:35:51 DEBUG Haven:79 - Running...
+2016-06-24 14:35:57 INFO  TestService:30 - #
+2016-06-24 14:35:57 INFO  TestService:31 - GET resources/
+2016-06-24 14:35:57 INFO  TestService:32 - #
+2016-06-24 14:36:01 DEBUG Haven:79 - Running...
+2016-06-24 14:36:07 INFO  TestService:30 - #
+2016-06-24 14:36:07 INFO  TestService:31 - GET resources/
+2016-06-24 14:36:07 INFO  TestService:32 - #
+2016-06-24 14:36:11 DEBUG Haven:79 - Running...
+2016-06-24 14:36:17 INFO  TestService:30 - #
+2016-06-24 14:36:17 INFO  TestService:31 - GET resources/
+2016-06-24 14:36:17 INFO  TestService:32 - #
+2016-06-24 14:36:21 DEBUG Haven:79 - Running...
+2016-06-24 14:36:31 DEBUG Haven:79 - Running...
+2016-06-24 14:36:41 DEBUG Haven:79 - Running...
+2016-06-24 14:36:51 DEBUG Haven:79 - Running...
+2016-06-24 14:37:01 DEBUG Haven:79 - Running...
+2016-06-24 14:37:06 INFO  TestService:30 - #
+2016-06-24 14:37:06 INFO  TestService:31 - GET resources/
+2016-06-24 14:37:06 INFO  TestService:32 - #
+2016-06-24 14:37:11 DEBUG Haven:79 - Running...
+2016-06-24 14:37:16 INFO  TestService:30 - #
+2016-06-24 14:37:16 INFO  TestService:31 - GET resources/
+2016-06-24 14:37:16 INFO  TestService:32 - #
+2016-06-24 14:37:21 DEBUG Haven:79 - Running...
+2016-06-24 14:37:26 INFO  TestService:30 - #
+2016-06-24 14:37:26 INFO  TestService:31 - GET resources/
+2016-06-24 14:37:26 INFO  TestService:32 - #
+2016-06-24 14:37:31 DEBUG Haven:79 - Running...
+2016-06-24 14:37:36 INFO  TestService:30 - #
+2016-06-24 14:37:36 INFO  TestService:31 - GET resources/
+2016-06-24 14:37:36 INFO  TestService:32 - #
+2016-06-24 14:37:41 DEBUG Haven:79 - Running...
+2016-06-24 15:02:59 INFO  Haven:35 - 
+2016-06-24 15:02:59 INFO  Haven:36 - ###############################
+2016-06-24 15:02:59 INFO  Haven:37 -    Starting Haven
+2016-06-24 15:02:59 INFO  Haven:38 - ###############################
+2016-06-24 15:02:59 INFO  Haven:41 - ##########
+2016-06-24 15:02:59 INFO  Haven:42 - Starting Resourcerer
+2016-06-24 15:02:59 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 15:02:59 INFO  Haven:50 - Result from testing endpoint: {mocked Endpoint works: true}
+2016-06-24 15:02:59 INFO  Haven:61 - Discovered 2 active resources
+2016-06-24 15:02:59 INFO  Haven:65 - ##########
+2016-06-24 15:02:59 INFO  Haven:66 - Starting Scanner
+2016-06-24 15:03:00 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 15:03:01 INFO  Haven:98 - Current URL is : http://192.168.56.1:8081
+2016-06-24 15:03:01 DEBUG Haven:82 - Please, enter 0 to exit.
+2016-06-24 15:03:08 INFO  TestService:30 - #
+2016-06-24 15:03:08 INFO  TestService:31 - GET resources/
+2016-06-24 15:03:08 INFO  TestService:32 - #
+2016-06-24 15:03:11 DEBUG Haven:79 - Running...
+2016-06-24 15:03:18 INFO  TestService:30 - #
+2016-06-24 15:03:18 INFO  TestService:31 - GET resources/
+2016-06-24 15:03:18 INFO  TestService:32 - #
+2016-06-24 15:03:21 DEBUG Haven:79 - Running...
+2016-06-24 15:03:28 INFO  TestService:30 - #
+2016-06-24 15:03:28 INFO  TestService:31 - GET resources/
+2016-06-24 15:03:28 INFO  TestService:32 - #
+2016-06-24 15:03:31 DEBUG Haven:79 - Running...
+2016-06-24 15:03:41 DEBUG Haven:79 - Running...
+2016-06-24 15:03:51 DEBUG Haven:79 - Running...
+2016-06-24 15:04:01 DEBUG Haven:79 - Running...
+2016-06-24 15:14:59 INFO  Haven:35 - 
+2016-06-24 15:14:59 INFO  Haven:36 - ###############################
+2016-06-24 15:14:59 INFO  Haven:37 -    Starting Haven
+2016-06-24 15:14:59 INFO  Haven:38 - ###############################
+2016-06-24 15:14:59 INFO  Haven:41 - ##########
+2016-06-24 15:14:59 INFO  Haven:42 - Starting Resourcerer
+2016-06-24 15:14:59 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 15:14:59 INFO  Haven:50 - Result from testing endpoint: {mocked Endpoint works: true}
+2016-06-24 15:14:59 INFO  Haven:61 - Discovered 3 active resources
+2016-06-24 15:14:59 INFO  Haven:65 - ##########
+2016-06-24 15:14:59 INFO  Haven:66 - Starting Scanner
+2016-06-24 15:15:01 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 15:15:02 INFO  Haven:98 - Current URL is : http://192.168.56.1:8081
+2016-06-24 15:15:02 DEBUG Haven:82 - Please, enter 0 to exit.
+2016-06-24 15:15:09 INFO  TestService:30 - #
+2016-06-24 15:15:09 INFO  TestService:31 - GET resources/
+2016-06-24 15:15:09 INFO  TestService:32 - #
+2016-06-24 15:15:12 DEBUG Haven:79 - Running...
+2016-06-24 15:15:19 INFO  TestService:30 - #
+2016-06-24 15:15:19 INFO  TestService:31 - GET resources/
+2016-06-24 15:15:19 INFO  TestService:32 - #
+2016-06-24 15:15:22 DEBUG Haven:79 - Running...
+2016-06-24 15:15:28 INFO  Haven:35 - 
+2016-06-24 15:15:28 INFO  Haven:36 - ###############################
+2016-06-24 15:15:28 INFO  Haven:37 -    Starting Haven
+2016-06-24 15:15:28 INFO  Haven:38 - ###############################
+2016-06-24 15:15:28 INFO  Haven:41 - ##########
+2016-06-24 15:15:28 INFO  Haven:42 - Starting Resourcerer
+2016-06-24 15:15:28 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 15:15:28 INFO  Haven:50 - Result from testing endpoint: {mocked Endpoint works: true}
+2016-06-24 15:15:28 INFO  Haven:61 - Discovered 1 active resources
+2016-06-24 15:15:28 INFO  Haven:65 - ##########
+2016-06-24 15:15:28 INFO  Haven:66 - Starting Scanner
+2016-06-24 15:15:29 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 15:15:30 INFO  Haven:98 - Current URL is : http://192.168.56.1:8081
+2016-06-24 15:15:30 DEBUG Haven:82 - Please, enter 0 to exit.
+2016-06-24 15:15:33 INFO  TestService:30 - #
+2016-06-24 15:15:33 INFO  TestService:31 - GET resources/
+2016-06-24 15:15:33 INFO  TestService:32 - #
+2016-06-24 15:15:40 DEBUG Haven:79 - Running...
+2016-06-24 15:15:43 INFO  TestService:30 - #
+2016-06-24 15:15:43 INFO  TestService:31 - GET resources/
+2016-06-24 15:15:43 INFO  TestService:32 - #
+2016-06-24 15:15:50 DEBUG Haven:79 - Running...
+2016-06-24 15:15:53 INFO  TestService:30 - #
+2016-06-24 15:15:53 INFO  TestService:31 - GET resources/
+2016-06-24 15:15:53 INFO  TestService:32 - #
+2016-06-24 15:16:00 DEBUG Haven:79 - Running...
+2016-06-24 15:16:03 INFO  TestService:30 - #
+2016-06-24 15:16:03 INFO  TestService:31 - GET resources/
+2016-06-24 15:16:03 INFO  TestService:32 - #
+2016-06-24 15:16:10 DEBUG Haven:79 - Running...
+2016-06-24 15:16:13 INFO  TestService:30 - #
+2016-06-24 15:16:13 INFO  TestService:31 - GET resources/
+2016-06-24 15:16:13 INFO  TestService:32 - #
+2016-06-24 18:14:53 INFO  Haven:35 - 
+2016-06-24 18:14:53 INFO  Haven:36 - ###############################
+2016-06-24 18:14:53 INFO  Haven:37 -    Starting Haven
+2016-06-24 18:14:53 INFO  Haven:38 - ###############################
+2016-06-24 18:14:53 INFO  Haven:41 - ##########
+2016-06-24 18:14:53 INFO  Haven:42 - Starting Resourcerer
+2016-06-24 18:14:53 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 18:14:53 INFO  Haven:50 - Result from testing endpoint: {mocked Endpoint works: true}
+2016-06-24 18:14:53 INFO  Haven:61 - Discovered 1 active resources
+2016-06-24 18:14:53 INFO  Haven:65 - ##########
+2016-06-24 18:14:53 INFO  Haven:66 - Starting Scanner
+2016-06-24 18:14:55 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 18:14:56 INFO  Haven:98 - Current URL is : http://192.168.56.1:8081
+2016-06-24 18:14:56 DEBUG Haven:82 - Please, enter 0 to exit.
+2016-06-24 18:15:06 DEBUG Haven:79 - Running...
+2016-06-24 18:15:07 INFO  TestService:30 - #
+2016-06-24 18:15:07 INFO  TestService:31 - GET resources/
+2016-06-24 18:15:07 INFO  TestService:32 - #
+2016-06-24 18:15:16 DEBUG Haven:79 - Running...
+2016-06-24 18:15:26 DEBUG Haven:79 - Running...
+2016-06-24 18:22:52 INFO  Haven:35 - 
+2016-06-24 18:22:52 INFO  Haven:36 - ###############################
+2016-06-24 18:22:52 INFO  Haven:37 -    Starting Haven
+2016-06-24 18:22:52 INFO  Haven:38 - ###############################
+2016-06-24 18:22:52 INFO  Haven:41 - ##########
+2016-06-24 18:22:52 INFO  Haven:42 - Starting Resourcerer
+2016-06-24 18:22:52 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 18:22:52 INFO  Haven:50 - Result from testing endpoint: {mocked Endpoint works: true}
+2016-06-24 18:22:52 INFO  Haven:61 - Discovered 5 active resources
+2016-06-24 18:22:52 INFO  Haven:65 - ##########
+2016-06-24 18:22:52 INFO  Haven:66 - Starting Scanner
+2016-06-24 18:22:54 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-24 18:22:55 INFO  Haven:98 - Current URL is : http://192.168.56.1:8081
+2016-06-24 18:22:55 DEBUG Haven:82 - Please, enter 0 to exit.
+2016-06-24 18:23:01 INFO  TestService:30 - #
+2016-06-24 18:23:01 INFO  TestService:31 - GET resources/
+2016-06-24 18:23:01 INFO  TestService:32 - #
+2016-06-24 18:23:05 DEBUG Haven:79 - Running...
+2016-06-24 18:23:15 DEBUG Haven:79 - Running...
+2016-06-24 18:23:25 DEBUG Haven:79 - Running...
+2016-06-24 18:23:35 DEBUG Haven:79 - Running...
+2016-06-24 18:23:45 DEBUG Haven:79 - Running...
+2016-06-24 18:23:55 DEBUG Haven:79 - Running...
+2016-06-24 18:24:05 DEBUG Haven:79 - Running...
+2016-06-24 18:24:15 DEBUG Haven:79 - Running...
+2016-06-24 18:24:25 DEBUG Haven:79 - Running...
+2016-06-24 18:24:35 DEBUG Haven:79 - Running...
+2016-06-24 18:24:45 DEBUG Haven:79 - Running...
+2016-06-24 18:24:55 DEBUG Haven:79 - Running...
+2016-06-24 18:25:05 DEBUG Haven:79 - Running...
+2016-06-24 18:25:15 DEBUG Haven:79 - Running...
+2016-06-24 18:25:25 DEBUG Haven:79 - Running...
+2016-06-24 18:25:35 DEBUG Haven:79 - Running...
+2016-06-24 18:25:45 DEBUG Haven:79 - Running...
+2016-06-24 18:25:55 DEBUG Haven:79 - Running...
+2016-06-24 18:26:05 DEBUG Haven:79 - Running...
+2016-06-24 18:26:15 DEBUG Haven:79 - Running...
+2016-06-24 18:26:25 DEBUG Haven:79 - Running...
+2016-06-24 18:26:35 DEBUG Haven:79 - Running...
+2016-06-24 18:26:45 DEBUG Haven:79 - Running...
+2016-06-24 18:26:55 DEBUG Haven:79 - Running...
+2016-06-24 18:27:05 DEBUG Haven:79 - Running...
+2016-06-24 18:27:15 DEBUG Haven:79 - Running...
+2016-06-24 18:27:22 INFO  TestService:30 - #
+2016-06-24 18:27:22 INFO  TestService:31 - GET resources/
+2016-06-24 18:27:22 INFO  TestService:32 - #
+2016-06-24 18:27:25 DEBUG Haven:79 - Running...
+2016-06-24 18:27:35 DEBUG Haven:79 - Running...
+2016-06-24 18:27:45 DEBUG Haven:79 - Running...
+2016-06-24 18:27:55 DEBUG Haven:79 - Running...
+2016-06-24 18:28:05 DEBUG Haven:79 - Running...
+2016-06-24 18:28:15 DEBUG Haven:79 - Running...
+2016-06-24 18:28:24 INFO  TestService:30 - #
+2016-06-24 18:28:24 INFO  TestService:31 - GET resources/
+2016-06-24 18:28:24 INFO  TestService:32 - #
+2016-06-24 18:28:25 DEBUG Haven:79 - Running...
+2016-06-24 18:28:35 DEBUG Haven:79 - Running...
+2016-06-24 18:28:45 DEBUG Haven:79 - Running...
+2016-06-24 18:28:55 DEBUG Haven:79 - Running...
+2016-06-24 18:29:05 DEBUG Haven:79 - Running...
+2016-06-24 18:29:08 INFO  TestService:30 - #
+2016-06-24 18:29:08 INFO  TestService:31 - GET resources/
+2016-06-24 18:29:08 INFO  TestService:32 - #
+2016-06-24 18:29:15 DEBUG Haven:79 - Running...
+2016-06-24 18:29:25 DEBUG Haven:79 - Running...
+2016-06-30 17:27:21 INFO  Haven:35 - 
+2016-06-30 17:27:21 INFO  Haven:36 - ###############################
+2016-06-30 17:27:21 INFO  Haven:37 -    Starting Haven
+2016-06-30 17:27:21 INFO  Haven:38 - ###############################
+2016-06-30 17:27:21 INFO  Haven:41 - ##########
+2016-06-30 17:27:21 INFO  Haven:42 - Starting Resourcerer
+2016-06-30 17:27:21 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-30 17:27:21 INFO  Haven:50 - Result from testing endpoint: {mocked Endpoint works: true}
+2016-06-30 17:27:21 INFO  Haven:61 - Discovered 4 active resources
+2016-06-30 17:27:21 INFO  Haven:65 - ##########
+2016-06-30 17:27:21 INFO  Haven:66 - Starting Scanner
+2016-06-30 17:27:25 INFO  Resourcerer:33 - Initializing resourcerer with 1 endpoints
+2016-06-30 17:27:26 INFO  Haven:98 - Current URL is : http://192.168.56.1:8081
+2016-06-30 17:27:26 DEBUG Haven:82 - Please, enter 0 to exit.
+2016-06-30 17:27:36 DEBUG Haven:79 - Running...
+2016-06-30 17:27:37 INFO  TestService:30 - #
+2016-06-30 17:27:37 INFO  TestService:31 - GET resources/
+2016-06-30 17:27:37 INFO  TestService:32 - #
+2016-06-30 17:27:46 DEBUG Haven:79 - Running...
+2016-06-30 17:27:56 DEBUG Haven:79 - Running...

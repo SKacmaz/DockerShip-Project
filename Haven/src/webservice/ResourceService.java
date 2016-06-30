@@ -9,9 +9,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.apache.log4j.Logger;
-import org.codehaus.jettison.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import com.google.gson.Gson;
 
@@ -39,7 +36,7 @@ public class ResourceService {
 		
 		JsonResourceContainer jsonContainer = new JsonResourceContainer();
 		jsonContainer.setResourceList(sourcerer.getResourceSet());
-		String json = gson.toJson(jsonContainer); 
+		String json = gson.toJson(jsonContainer);
 		
 		return Response.ok(
 		        json,
@@ -57,20 +54,21 @@ public class ResourceService {
 		LOGGER.info("GET resources/id with: " + id);
 		LOGGER.info("#");
 		
-		JSONObject json = new JSONObject();
-		
-		try {
-			json = sourcerer.getResourceById(id).toJSON();
-			
-			return Response.ok(
-			        json.toString(),
-			        MediaType.APPLICATION_JSON_TYPE
-			).build();
-        
-		} catch (JSONException e1) {
-			LOGGER.error("Json Request failed with: " + e1);
-			return Response.serverError().build();
-		}
+//		JSONObject json = new JSONObject();
+//		
+//		try {
+//			json = sourcerer.getResourceById(id).toJSON();
+//			
+//			return Response.ok(
+//			        json.toString(),
+//			        MediaType.APPLICATION_JSON_TYPE
+//			).build();
+//        
+//		} catch (JSONException e1) {
+//			LOGGER.error("Json Request failed with: " + e1);
+//			return Response.serverError().build();
+//		}
+		return null;
     }
 	
 }
