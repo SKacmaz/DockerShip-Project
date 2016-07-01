@@ -6,8 +6,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * 
- * @author Jochen
+ * This class models the resource as an abstract class. All other resources must extends this abstract class.
+ * @author Jochen Joswig
  *
  */
 public abstract class AbstractResource implements IResource{

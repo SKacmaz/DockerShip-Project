@@ -6,7 +6,11 @@ import java.util.Map;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
+/**
+ * This class models the resources specific to Docker.
+ * @author Kim Reichert
+ *
+ */
 public class DockerResource extends AbstractResource{
 
 	private String type;
