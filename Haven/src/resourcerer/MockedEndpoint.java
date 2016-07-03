@@ -30,7 +30,7 @@ public class MockedEndpoint extends AbstractEndpoint {
 	
 	private User[] mockedUsers = {userA, userB};
 	
-	private int maxNumberOfResources = 5;
+	private int maxNumberOfResources = 2;
 	
 	private Random randomGenerator = new Random();
 	

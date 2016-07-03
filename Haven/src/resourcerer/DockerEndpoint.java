@@ -28,7 +28,7 @@ public class DockerEndpoint extends AbstractEndpoint
 	static final Logger LOGGER = Logger.getLogger(DockerEndpoint.class.getName());
 	
 	private static final String CURRENT_URL = 
-			"http://52.58.82.104:2375";
+			"http://52.58.249.187:2375";
 	
 	private static final String PATH_IMAGES = "/images/json";
 	
