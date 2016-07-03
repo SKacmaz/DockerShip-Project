@@ -17,7 +17,11 @@ import model.IResource;
 import resourcerer.DockerEndpoint;
 import resourcerer.MockedEndpoint;
 import resourcerer.Resourcerer;
-
+/**
+ * This is the main class of Haven. It initializes all other components and the communication with the resources.
+ * 
+ * @author Kim Reichert, Jochen Joswig
+ */
 public class Haven {
 
 //	static final Logger LOGGER = LogManager.getLogger(Haven.class.getName());

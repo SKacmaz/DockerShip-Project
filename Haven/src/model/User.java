@@ -1,5 +1,10 @@
 package model;
 
+/**
+ * This class models the User-Data for Haven.
+ * @author Jochen Joswig
+ *
+ */
 public class User {
 	private long id;
 	private String firstName;
