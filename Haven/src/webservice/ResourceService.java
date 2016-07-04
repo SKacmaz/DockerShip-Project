@@ -25,26 +25,29 @@ public class ResourceService {
 	@GET
 	@Path("/all")
 	@Produces("application/json")
-	public Response getResources()
+	public Response getResources(@QueryParam("callback" )String jsonpCallback)
 	{
 		LOGGER.info("#");
 		LOGGER.info("GET resources/");
 		LOGGER.info("#");
 		
-//		JSONObject json = new JSONObject();
 		Gson gson = new Gson();
 		
 		JsonResourceContainer jsonContainer = new JsonResourceContainer();
 		jsonContainer.setResourceList(sourcerer.getResourceSet());
 		String json = gson.toJson(jsonContainer);
 		
+		if (jsonpCallback != null)
+		{
+			json = jsonpCallback + "(" + json + ")";
+		}
+		
 		return Response.ok(
 		        json,
 		        MediaType.APPLICATION_JSON_TYPE
 		).build();
-		
 	}
-
+	
 	@GET
     @Path("/id")
     @Produces("application/json")

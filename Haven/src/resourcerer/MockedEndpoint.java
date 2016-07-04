@@ -22,7 +22,7 @@ public class MockedEndpoint extends AbstractEndpoint {
 
 	private List<IResource> mocked;
 	
-	private String[] mockedTypes = {"green", "blue"};
+	private String[] mockedTypes = {"orange", "blue", "yellow"};
 	
 	private User userA = new User(1, "Bob", "Marley");
 	
@@ -30,7 +30,7 @@ public class MockedEndpoint extends AbstractEndpoint {
 	
 	private User[] mockedUsers = {userA, userB};
 	
-	private int maxNumberOfResources = 2;
+	private int maxNumberOfResources = 8;
 	
 	private Random randomGenerator = new Random();
 	
